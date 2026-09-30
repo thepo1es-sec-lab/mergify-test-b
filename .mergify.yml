@@ -8,3 +8,6 @@ commands_restrictions:
   queue:
     conditions:
       - sender = ThePo1es
+  dequeue:
+    conditions:
+      - sender = ThePo1es
