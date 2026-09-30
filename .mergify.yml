@@ -2,7 +2,8 @@ queue_rules:
   - name: default
     queue_conditions:
       - base=main
-    merge_conditions: []
+    merge_conditions:
+      - check-success=never-runs-ci
 
 commands_restrictions:
   queue:
