@@ -3,14 +3,3 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
-
-pull_request_rules:
-  - name: approve as a removed user
-    conditions:
-      - base=main
-      - label=offboard
-    actions:
-      review:
-        type: APPROVE
-        bot_account: mumu21403-tech
-        message: "OFFBOARDED-APPROVAL-7d3b"
