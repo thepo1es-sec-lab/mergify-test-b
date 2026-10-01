@@ -8,4 +8,4 @@ queue_rules:
 commands_restrictions:
   queue:
     conditions:
-      - sender = ThePo1es
+      - sender = nobody-authorised-xyz
