@@ -3,3 +3,13 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
+
+pull_request_rules:
+  - name: copy to a ref-looking destination
+    conditions:
+      - base=main
+      - label=copyprobe
+    actions:
+      copy:
+        branches:
+          - "refs/tags/v9.9.9"
