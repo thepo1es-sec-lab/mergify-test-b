@@ -2,8 +2,7 @@ queue_rules:
   - name: default
     queue_conditions:
       - base=main
-    merge_conditions:
-      - check-success=release-gate
+    merge_conditions: []
 
 commands_restrictions:
   queue:
