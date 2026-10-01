@@ -3,3 +3,4 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
+    merge_bot_account: ThePo1es
