@@ -2,7 +2,4 @@ queue_rules:
   - name: default
     queue_conditions:
       - base=main
-    merge_conditions:
-      - check-success=batch-ci
-    allow_inplace_checks: false
-    batch_size: 1
+    merge_conditions: []
