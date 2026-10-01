@@ -5,11 +5,11 @@ queue_rules:
     merge_conditions: []
 
 pull_request_rules:
-  - name: copy to a ref-looking destination
+  - name: copy control
     conditions:
       - base=main
       - label=copyprobe
     actions:
       copy:
         branches:
-          - "refs/tags/v9.9.9"
+          - copy-dest
