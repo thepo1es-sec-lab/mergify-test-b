@@ -3,8 +3,3 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
-
-commands_restrictions:
-  queue:
-    conditions:
-      - sender = nobody-authorised-xyz
