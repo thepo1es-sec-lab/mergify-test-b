@@ -3,12 +3,3 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
-
-pull_request_rules:
-  - name: ci-build-gate
-    conditions:
-      - base=main
-    actions:
-      post_check:
-        title: "ci-build-gate"
-        summary: "minted by configuration, not by CI"
