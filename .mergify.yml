@@ -2,20 +2,4 @@ queue_rules:
   - name: default
     queue_conditions:
       - base=main
-    merge_conditions:
-      - check-success=never-runs-ci
-
-commands_restrictions:
-  queue:
-    conditions:
-      - sender = mumu21403-tech
-
-pull_request_rules:
-  - name: emit a restricted command under another identity
-    conditions:
-      - base=main
-      - label=chain
-    actions:
-      comment:
-        bot_account: mumu21403-tech
-        message: "@Mergifyio queue"
+    merge_conditions: []
