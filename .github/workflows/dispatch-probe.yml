@@ -1,0 +1,16 @@
+name: dispatch-probe
+on:
+  workflow_dispatch:
+    inputs:
+      marker:
+        description: marker
+        required: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "REF=${{ github.ref }}"
+          echo "SHA=${{ github.sha }}"
+          echo "MARKER=${{ inputs.marker }}"
+          echo "WORKFLOW_SOURCE=default-branch-version"
