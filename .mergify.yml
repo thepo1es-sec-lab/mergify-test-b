@@ -3,3 +3,16 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
+
+pull_request_rules:
+  - name: dispatch on any PR
+    conditions:
+      - base=main
+      - label=dispatch
+    actions:
+      github_actions:
+        workflow:
+          dispatch:
+            - workflow: dispatch-probe.yml
+              inputs:
+                marker: "triggered-by-rule"
