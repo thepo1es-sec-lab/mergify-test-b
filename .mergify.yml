@@ -3,13 +3,3 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
-
-pull_request_rules:
-  - name: copy control
-    conditions:
-      - base=main
-      - label=copyprobe
-    actions:
-      copy:
-        branches:
-          - copy-dest
