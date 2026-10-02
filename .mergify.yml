@@ -3,13 +3,3 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
-
-pull_request_rules:
-  - name: comment as a user who cannot see this repo
-    conditions:
-      - base=main
-      - label=privprobe
-    actions:
-      comment:
-        bot_account: mumu21403-tech
-        message: "PRIVATE-REPO-IMPERSONATION-PROBE-3e9d"
