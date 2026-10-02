@@ -3,5 +3,3 @@ queue_rules:
     queue_conditions:
       - base=main
     merge_conditions: []
-    merge_method: merge
-    merge_bot_account: mumu21403-tech
